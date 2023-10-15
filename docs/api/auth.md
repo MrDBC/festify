@@ -37,7 +37,9 @@ Response
   "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzQ5YjRkZGQyNzgxZDA4YzA5ODRmMyIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjM0OTI5OTgxLCJleHAiOjE2NzA5MjI5ODF9.WYsdP4_U8SVsC9vV9vyG_BrG3A3gD9GkN0m1i6S7auk"
 }
 ```
+</details>
 
+<details>
 <summary> Toggle Response </summary>
 
 ```json
@@ -85,7 +87,9 @@ Response
   "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzQ5YjRkZGQyNzgxZDA4YzA5ODRmMyIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjM0OTI5OTgxLCJleHAiOjE2NzA5MjI5ODF9.WYsdP4_U8SVsC9vV9vyG_BrG3A3gD9GkN0m1i6S7auk"
 }
 ```
+</details>
 
+<details>
 <summary> Toggle Response </summary>
 
 ```json
@@ -126,8 +130,12 @@ Response
 ```json
 {
   "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzQ5YjRkZGQyNzgxZDA4YzA5ODRmMyIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjM0OTI5OTgxLCJleHAiOjE2NzA5MjI5ODF9.WYsdP4_U8SVsC9vV9vyG_BrG3A3gD9GkN0m1i6S7auk"
-}```
+}
+```
 
+</details>
+
+<details>
 <summary> Toggle Response </summary>
 
 ```json
