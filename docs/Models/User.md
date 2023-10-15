@@ -9,9 +9,9 @@ The User Model represents the structure of an user in festify fest management fr
 | `_id`                   | string(ObjectId)   | The unique identifier for the user.                                                                              |
 | `name`                  | string             | The name of the user.                                                                                            |
 | `email`                 | string             | The email id of the user                                                                                         |
-| `passwordHash`          | string             | The password of the user                                                                                         |
+| `passwordHash`          | string             | The hashed representation of the user's password.                                                                |
 | `role`                  | string(ENUM)       | The type of role. Value can contain any one of ["admin", "organiser", "user"].                                   |
-| `organisation`          | string             | The name of the organisation the user works for.                                                                 |
+| `organisation`          | string(ObjectId)   | The unique identifier of the organisation the user works for.                                                    |
 
 ## Example User Object
 

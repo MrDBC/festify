@@ -11,6 +11,7 @@ class AuthController {
         refreshToken,
         user: userPayload,
       } = await AuthService.loginWithEmailPassword(email, password);
+      
       res.cookie("festifyRefreshToken", refreshToken, {
         httpOnly: true,
         sameSite: "none",

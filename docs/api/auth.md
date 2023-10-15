@@ -19,20 +19,30 @@ Authenticate a user with email and password.
 
 ```json
 {
-  "email": "user@example.com",
-  "password": "user_password"
+  "user": {
+    "email": "user@example.com",
+    "password": "user_password"
+  }
+}
+
+```
+</details>
+
+Response
+<details>
+<summary> Toggle Response Cookies </summary>
+
+```json
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzQ5YjRkZGQyNzgxZDA4YzA5ODRmMyIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjM0OTI5OTgxLCJleHAiOjE2NzA5MjI5ODF9.WYsdP4_U8SVsC9vV9vyG_BrG3A3gD9GkN0m1i6S7auk"
 }
 ```
 
-</details>
-Response
-<details>
 <summary> Toggle Response </summary>
 
 ```json
 {
   "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzQ5YjRkZGQyNzgxZDA8c2FsdHJvdW5kcyFuZGhhZGhhcHBlcnMiLCJyb2xlIjoidXNlciIsImlhdCI6MTYzNDkyOTk4MSwiZXhwIjoxNjcwOTIyOTgxLCJvcmdhbmlzYXRpb24iOiI1ZjdmMmI5YTRmM2QxZTBiMWM5YjRjN2EiLCJyb2xlIjoiVXNlciBDaGV0dHJpIn0.WYsdP4_U8SVsC9vV9vyG_BrG3A3gD9GkN0m1i6S7auk",
-  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzQ5YjRkZGQyNzgxZDA4YzA5ODRmMyIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjM0OTI5OTgxLCJleHAiOjE2NzA5MjI5ODF9.WYsdP4_U8SVsC9vV9vyG_BrG3A3gD9GkN0m1i6S7auk",
   "user": {
     "_id": "5349b4ddd2781d08c09890f3",
     "name": "Dhan Bahadur Chhettri",
@@ -54,11 +64,13 @@ Register a new user.
 
 ```json
 {
-  "name": "Dhan Bahadur Chhettri",
-  "email": "user@example.com",
-  "password": "user_password",
-  "role": "user",
-  "organisation": "5f7f2b9a4f3d1e0b1c9b4c7a"
+    "user":{
+        "name": "Dhan Bahadur Chhettri",
+        "email": "user@example.com",
+        "password": "user_password",
+        "role": "user",
+        "organisation": "5f7f2b9a4f3d1e0b1c9b4c7a"
+    }
 }
 ```
 
@@ -66,12 +78,19 @@ Register a new user.
 
 Response
 <details>
+<summary> Toggle Response Cookies </summary>
+
+```json
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzQ5YjRkZGQyNzgxZDA4YzA5ODRmMyIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjM0OTI5OTgxLCJleHAiOjE2NzA5MjI5ODF9.WYsdP4_U8SVsC9vV9vyG_BrG3A3gD9GkN0m1i6S7auk"
+}
+```
+
 <summary> Toggle Response </summary>
 
 ```json
 {
   "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzQ5YjRkZGQyNzgxZDA8c2FsdHJvdW5kcyFuZGhhZGhhcHBlcnMiLCJyb2xlIjoidXNlciIsImlhdCI6MTYzNDkyOTk4MSwiZXhwIjoxNjcwOTIyOTgxLCJvcmdhbmlzYXRpb24iOiI1ZjdmMmI5YTRmM2QxZTBiMWM5YjRjN2EiLCJyb2xlIjoiVXNlciBDaGV0dHJpIn0.WYsdP4_U8SVsC9vV9vyG_BrG3A3gD9GkN0m1i6S7auk",
-  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzQ5YjRkZGQyNzgxZDA4YzA5ODRmMyIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjM0OTI5OTgxLCJleHAiOjE2NzA5MjI5ODF9.WYsdP4_U8SVsC9vV9vyG_BrG3A3gD9GkN0m1i6S7auk",
   "user": {
     "_id": "5349b4ddd2781d08c09890f3",
     "name": "Dhan Bahadur Chhettri",
@@ -89,7 +108,7 @@ Refresh an access token using a refresh token.
 
 Request
 <details>
-<summary> Toggle Request Body </summary>
+<summary> Toggle Request Cookies </summary>
 
 ```json
 {
@@ -102,12 +121,18 @@ Request
 
 Response
 <details>
+<summary> Toggle Response Cookies </summary>
+
+```json
+{
+  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzQ5YjRkZGQyNzgxZDA4YzA5ODRmMyIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjM0OTI5OTgxLCJleHAiOjE2NzA5MjI5ODF9.WYsdP4_U8SVsC9vV9vyG_BrG3A3gD9GkN0m1i6S7auk"
+}```
+
 <summary> Toggle Response </summary>
 
 ```json
 {
   "accessToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzQ5YjRkZGQyNzgxZDA8c2FsdHJvdW5kcyFuZGhhZGhhcHBlcnMiLCJyb2xlIjoidXNlciIsImlhdCI6MTYzNDkyOTk4MSwiZXhwIjoxNjcwOTIyOTgxLCJvcmdhbmlzYXRpb24iOiI1ZjdmMmI5YTRmM2QxZTBiMWM5YjRjN2EiLCJyb2xlIjoiVXNlciBDaGV0dHJpIn0.WYsdP4_U8SVsC9vV9vyG_BrG3A3gD9GkN0m1i6S7auk",
-  "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1MzQ5YjRkZGQyNzgxZDA4YzA5ODRmMyIsInJvbGUiOiJ1c2VyIiwiaWF0IjoxNjM0OTI5OTgxLCJleHAiOjE2NzA5MjI5ODF9.WYsdP4_U8SVsC9vV9vyG_BrG3A3gD9GkN0m1i6S7auk",
   "user": {
     "_id": "5349b4ddd2781d08c09890f3",
     "name": "Dhan Bahadur Chhettri",
@@ -120,15 +145,17 @@ Response
 </details>
 
 ### `GET` /logout
-Logout a user (requires authentication).
+Logout a user (requires authentication) and clears the refreshToken cookie
 
 Response
 <details>
+
+
 <summary> Toggle Response </summary>
 
 ```json
 {
-  "message": "User logged out"
+  "message": "Logged out successfully" 
 }
 ```
 </details>
